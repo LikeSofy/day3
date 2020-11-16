@@ -1,8 +1,8 @@
 package com.sofy.studing.report;
 
-import com.sofy.studing.birthday.Birthday;
+import com.sofy.studing.groupe.Birthday;
 import com.sofy.studing.groupe.Groupe;
-import com.sofy.studing.student.Student;
+import com.sofy.studing.groupe.Student;
 
 import java.util.Arrays;
 

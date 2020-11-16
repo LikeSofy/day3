@@ -1,14 +1,12 @@
 package com.sofy.studing.groupe;
 
-import com.sofy.studing.student.Student;
-
 import java.util.Arrays;
 
 public class Groupe {
-    String faculty;
-    int numGroupe;
-    int numCourse;
-    Student[] students;
+    private String faculty;
+    private int numGroupe;
+    private int numCourse;
+    private Student[] students;
 
     public Groupe(String faculty, int numGroupe, int numCourse, Student[] students) {
         this.faculty = faculty;

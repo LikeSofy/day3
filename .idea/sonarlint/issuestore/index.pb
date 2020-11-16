@@ -17,3 +17,9 @@ _
 /src/com/sofy/studing/service/GroupeService.java,6\b\6b64798c83d2b951f90eba3bb8b270d87fdfc7a4
 ]
 -src/com/sofy/studing/service/MainService.java,b\6\b639ce8648e1e20bc537b682df5a98b6197a225f
+Y
+)src/com/sofy/studing/groupe/Birthday.java,f\0\f0f8f457a868ea27087d7825f4fd922c1c73e86d
+X
+(src/com/sofy/studing/groupe/Student.java,1\7\17d91e92096d1f17e48bb3452d7fa37a454893bb
+X
+(src/com/sofy/studing/groupe/Subject.java,9\6\96a1c2ce87b9a62412cb8d87fd4b0833cd5a1a0e

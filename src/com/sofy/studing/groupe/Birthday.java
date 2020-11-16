@@ -1,9 +1,9 @@
-package com.sofy.studing.birthday;
+package com.sofy.studing.groupe;
 
 public class Birthday {
-    int dayBirthday;
-    int monthBirthday;
-    int yearBirthday;
+    private int dayBirthday;
+    private int monthBirthday;
+    private int yearBirthday;
 
     public Birthday(int dayBirthday, int monthBirthday, int yearBirthday) {
         this.dayBirthday = dayBirthday;

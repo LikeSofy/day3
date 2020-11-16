@@ -1,19 +1,16 @@
-package com.sofy.studing.student;
-
-import com.sofy.studing.subject.Subject;
-import com.sofy.studing.birthday.Birthday;
+package com.sofy.studing.groupe;
 
 import java.util.Arrays;
 
 public class Student {
-    int idStudent;
-    String firstName;
-    String lastName;
-    String middleName;
-    Subject[] subjects;
-    Birthday birthday;
-    String adress;
-    String phone;
+    private int idStudent;
+    private String firstName;
+    private String lastName;
+    private String middleName;
+    private Subject[] subjects;
+    private Birthday birthday;
+    private String adress;
+    private String phone;
 
     public Student(int idStudent, String firstName, String lastName, String middleName, Subject[] subjects, Birthday birthday, String adress, String phone) {
         this.idStudent = idStudent;

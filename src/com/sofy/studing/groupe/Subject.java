@@ -1,10 +1,10 @@
-package com.sofy.studing.subject;
+package com.sofy.studing.groupe;
 
 import java.util.Arrays;
 
 public class Subject {
-    String subjectName;
-    int[] marks;
+    private String subjectName;
+    private int[] marks;
 
     public Subject(String subjectName, int[] marks) {
         this.subjectName = subjectName;

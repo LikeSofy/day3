@@ -1,8 +1,8 @@
 package com.sofy.studing.service;
 
 import com.sofy.studing.groupe.Groupe;
-import com.sofy.studing.student.Student;
-import com.sofy.studing.birthday.Birthday;
+import com.sofy.studing.groupe.Student;
+import com.sofy.studing.groupe.Birthday;
 
 public class GroupeService {
     public Groupe[] getGroupesByFaculty(Groupe[] groupes, String faculty) {
@@ -120,7 +120,7 @@ public class GroupeService {
     }
 
     private boolean date1AfterDate2(Birthday date1, Birthday date2) {
-        return (date1.getYearBirthday() > date2.getYearBirthday()) || ((date1.getYearBirthday() == date2.getYearBirthday() && date1.getMonthBirthday() > date2.getMonthBirthday()) || (date1.getMonthBirthday() == date2.getMonthBirthday() && date1.getDayBirthday() >= date2.getDayBirthday()));
+        return (date1.getYearBirthday() > date2.getYearBirthday()) || ((date1.getYearBirthday() == date2.getYearBirthday() && date1.getMonthBirthday() > date2.getMonthBirthday()) || (date1.getYearBirthday() == date2.getYearBirthday() && date1.getMonthBirthday() == date2.getMonthBirthday() && date1.getDayBirthday() >= date2.getDayBirthday()));
     }
 
 }
