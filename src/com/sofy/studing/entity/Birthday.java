@@ -1,4 +1,4 @@
-package com.sofy.studing.groupe;
+package com.sofy.studing.entity;
 
 public class Birthday {
     private int dayBirthday;

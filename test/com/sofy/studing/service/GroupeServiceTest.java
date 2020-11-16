@@ -1,9 +1,9 @@
 package com.sofy.studing.service;
 
-import com.sofy.studing.groupe.Birthday;
-import com.sofy.studing.groupe.Groupe;
-import com.sofy.studing.groupe.Student;
-import com.sofy.studing.groupe.Subject;
+import com.sofy.studing.entity.Birthday;
+import com.sofy.studing.entity.Groupe;
+import com.sofy.studing.entity.Student;
+import com.sofy.studing.entity.Subject;
 import org.testng.annotations.Test;
 
 import java.util.Arrays;

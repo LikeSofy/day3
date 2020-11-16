@@ -2,10 +2,10 @@ package com.sofy.studing.service;
 
 import java.lang.Math;
 
-import com.sofy.studing.groupe.Birthday;
-import com.sofy.studing.groupe.Groupe;
-import com.sofy.studing.groupe.Student;
-import com.sofy.studing.groupe.Subject;
+import com.sofy.studing.entity.Birthday;
+import com.sofy.studing.entity.Groupe;
+import com.sofy.studing.entity.Student;
+import com.sofy.studing.entity.Subject;
 
 public class MainService {
     public Groupe[] createRandomGroupes() {

@@ -1,11 +1,11 @@
 package com.sofy.studing.main;
 
-import com.sofy.studing.groupe.Birthday;
-import com.sofy.studing.groupe.Groupe;
+import com.sofy.studing.entity.Birthday;
+import com.sofy.studing.entity.Groupe;
 import com.sofy.studing.report.StudentsReport;
 import com.sofy.studing.service.MainService;
 import com.sofy.studing.service.GroupeService;
-import com.sofy.studing.groupe.Student;
+import com.sofy.studing.entity.Student;
 
 
 public class ProjectMain {

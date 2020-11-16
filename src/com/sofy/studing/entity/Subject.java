@@ -1,4 +1,4 @@
-package com.sofy.studing.groupe;
+package com.sofy.studing.entity;
 
 import java.util.Arrays;
 

@@ -1,12 +1,6 @@
 
-[
-+src/com/sofy/studing/birthday/Birthday.java,7\0\70069d254471744bbd0a6c721e16bd841261a7cd
 d
 4test/com/sofy/studing/service/GroupeServiceTest.java,a\a\aafaeabfaa51ed5b181d5e6ed80d1bdf3a5867dc
-Y
-)src/com/sofy/studing/subject/Subject.java,2\c\2cb717342a84e5f767b35958db55e1cd6801d69c
-Y
-)src/com/sofy/studing/student/Student.java,8\d\8d7d6e991f90672aedb23dd5ded27e75b6af71db
 Z
 *src/com/sofy/studing/main/ProjectMain.java,3\2\3272d69f4692f7891cd9b3101d7c101c6e816f9b
 W
