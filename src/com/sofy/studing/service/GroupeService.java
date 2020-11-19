@@ -120,7 +120,10 @@ public class GroupeService {
     }
 
     private boolean date1AfterDate2(Birthday date1, Birthday date2) {
-        return (date1.getYearBirthday() > date2.getYearBirthday()) || ((date1.getYearBirthday() == date2.getYearBirthday() && date1.getMonthBirthday() > date2.getMonthBirthday()) || (date1.getYearBirthday() == date2.getYearBirthday() && date1.getMonthBirthday() == date2.getMonthBirthday() && date1.getDayBirthday() >= date2.getDayBirthday()));
+        boolean yearAfter = (date1.getYearBirthday() > date2.getYearBirthday());
+        boolean monAfter = (date1.getYearBirthday() == date2.getYearBirthday() && date1.getMonthBirthday() > date2.getMonthBirthday());
+        boolean dayAfter = ((date1.getYearBirthday() == date2.getYearBirthday() && date1.getMonthBirthday() == date2.getMonthBirthday() && date1.getDayBirthday() >= date2.getDayBirthday()));
+        return yearAfter || monAfter || dayAfter;
     }
 
 }

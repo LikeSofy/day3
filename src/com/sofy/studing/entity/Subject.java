@@ -1,6 +1,7 @@
 package com.sofy.studing.entity;
 
 import java.util.Arrays;
+import java.util.Objects;
 
 public class Subject {
     private String subjectName;
@@ -25,6 +26,22 @@ public class Subject {
 
     public void setMarks(int[] marks) {
         this.marks = marks;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Subject subject = (Subject) o;
+        return Objects.equals(subjectName, subject.subjectName) &&
+                Arrays.equals(marks, subject.marks);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Objects.hash(subjectName);
+        result = 31 * result + Arrays.hashCode(marks);
+        return result;
     }
 
     @Override

@@ -1,5 +1,7 @@
 package com.sofy.studing.entity;
 
+import java.util.Objects;
+
 public class Birthday {
     private int dayBirthday;
     private int monthBirthday;
@@ -33,6 +35,21 @@ public class Birthday {
 
     public void setYearBirthday(int yearBirthday) {
         this.yearBirthday = yearBirthday;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Birthday birthday = (Birthday) o;
+        return dayBirthday == birthday.dayBirthday &&
+                monthBirthday == birthday.monthBirthday &&
+                yearBirthday == birthday.yearBirthday;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(dayBirthday, monthBirthday, yearBirthday);
     }
 
     @Override

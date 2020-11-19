@@ -1,6 +1,7 @@
 package com.sofy.studing.entity;
 
 import java.util.Arrays;
+import java.util.Objects;
 
 public class Groupe {
     private String faculty;
@@ -45,6 +46,24 @@ public class Groupe {
 
     public void setStudents(Student[] students) {
         this.students = students;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Groupe groupe = (Groupe) o;
+        return numGroupe == groupe.numGroupe &&
+                numCourse == groupe.numCourse &&
+                Objects.equals(faculty, groupe.faculty) &&
+                Arrays.equals(students, groupe.students);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Objects.hash(faculty, numGroupe, numCourse);
+        result = 31 * result + Arrays.hashCode(students);
+        return result;
     }
 
     @Override

@@ -3,8 +3,6 @@ d
 4test/com/sofy/studing/service/GroupeServiceTest.java,a\a\aafaeabfaa51ed5b181d5e6ed80d1bdf3a5867dc
 Z
 *src/com/sofy/studing/main/ProjectMain.java,3\2\3272d69f4692f7891cd9b3101d7c101c6e816f9b
-W
-'src/com/sofy/studing/groupe/Groupe.java,8\9\89ee30c08cc937eb055ac777c24151db32bf17d5
 _
 /src/com/sofy/studing/report/StudentsReport.java,1\5\15f328e27c148dc6aa08de120b0744856bbf00a2
 _
@@ -12,8 +10,10 @@ _
 ]
 -src/com/sofy/studing/service/MainService.java,b\6\b639ce8648e1e20bc537b682df5a98b6197a225f
 Y
-)src/com/sofy/studing/groupe/Birthday.java,f\0\f0f8f457a868ea27087d7825f4fd922c1c73e86d
+)src/com/sofy/studing/entity/Birthday.java,a\0\a0ad864bbb0c52735e7dc22b8c1c33ed433fa092
+W
+'src/com/sofy/studing/entity/Groupe.java,6\7\672c4e77f58e1b8cde5c30235ffae0ff305ae837
 X
-(src/com/sofy/studing/groupe/Student.java,1\7\17d91e92096d1f17e48bb3452d7fa37a454893bb
+(src/com/sofy/studing/entity/Student.java,c\d\cdbb0ac5366a25f01ea5a98ecd979d1f785e4ca3
 X
-(src/com/sofy/studing/groupe/Subject.java,9\6\96a1c2ce87b9a62412cb8d87fd4b0833cd5a1a0e
+(src/com/sofy/studing/entity/Subject.java,b\7\b79b45a11fe51db8d5d0e18fc8f84533c22f001c

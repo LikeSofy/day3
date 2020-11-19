@@ -46,6 +46,7 @@ public class GroupeServiceTest {
                 new Student(4, "Student4", null, null, null, new Birthday(1, 1, 2007), null, null),
                 new Student(6, "Student6", null, null, null, new Birthday(1, 1, 2005), null, null)};
 
+        assertTrue(Arrays.equals(expected, actual));
         assertEquals(Arrays.toString(actual), Arrays.toString(expected));
     }
 
@@ -58,7 +59,7 @@ public class GroupeServiceTest {
         groupes[1] = new Groupe("ATF", 10722118, 3, null);
         Groupe[] expected = {groupes[0]};
         Groupe[] actual = service.getGroupesByFaculty(groupes, searchFacilty);
-        assertEquals(Arrays.toString(actual), Arrays.toString(expected));
+        assertTrue(Arrays.equals(expected, actual));
     }
 
     @Test
@@ -72,6 +73,6 @@ public class GroupeServiceTest {
         groupes[2] = new Groupe("POIT", 10702219, 2, null);
         Groupe[] expected = {groupes[0], groupes[2]};
         Groupe[] actual = service.getGroupesByFacultyNumCourse(groupes, searchFacilty, numCourse);
-        assertEquals(Arrays.toString(actual), Arrays.toString(expected));
+        assertTrue(Arrays.equals(expected, actual));
     }
 }

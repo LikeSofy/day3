@@ -1,6 +1,7 @@
 package com.sofy.studing.entity;
 
 import java.util.Arrays;
+import java.util.Objects;
 
 public class Student {
     private int idStudent;
@@ -85,6 +86,28 @@ public class Student {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return idStudent == student.idStudent &&
+                Objects.equals(firstName, student.firstName) &&
+                Objects.equals(lastName, student.lastName) &&
+                Objects.equals(middleName, student.middleName) &&
+                Arrays.equals(subjects, student.subjects) &&
+                Objects.equals(birthday, student.birthday) &&
+                Objects.equals(adress, student.adress) &&
+                Objects.equals(phone, student.phone);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Objects.hash(idStudent, firstName, lastName, middleName, birthday, adress, phone);
+        result = 31 * result + Arrays.hashCode(subjects);
+        return result;
     }
 
     @Override
