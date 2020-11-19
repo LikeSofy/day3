@@ -1,11 +1,13 @@
 package com.sofy.studing.service;
 
+import com.sofy.studing.entity.EducationalEstablishment;
 import com.sofy.studing.entity.Groupe;
 import com.sofy.studing.entity.Student;
 import com.sofy.studing.entity.Birthday;
 
 public class GroupeService {
-    public Groupe[] getGroupesByFaculty(Groupe[] groupes, String faculty) {
+    public Groupe[] getGroupesByFaculty(EducationalEstablishment educationalEstablishment, String faculty) {
+        Groupe[] groupes = educationalEstablishment.getGroupes();
         int lengthGroupeArr = getLengthArrGroupesByFaculty(groupes, faculty);
         Groupe[] filteredGroupes = new Groupe[lengthGroupeArr];
         int k = 0;
@@ -34,7 +36,8 @@ public class GroupeService {
         return length;
     }
 
-    public Groupe[] getGroupesByFacultyNumCourse(Groupe[] groupes, String faculty, int numCourse) {
+    public Groupe[] getGroupesByFacultyNumCourse(EducationalEstablishment educationalEstablishment, String faculty, int numCourse) {
+        Groupe[] groupes = educationalEstablishment.getGroupes();
         Groupe[] filteredGroupes = new Groupe[getLengthArrByFacultyNumCourse(groupes, faculty, numCourse)];
         int j = 0;
         int i = 0;
@@ -62,7 +65,8 @@ public class GroupeService {
         return length;
     }
 
-    public Student[] getStudetsBornAfter(Groupe[] groupes, Birthday day) {
+    public Student[] getStudetsBornAfter(EducationalEstablishment educationalEstablishment, Birthday day) {
+        Groupe[] groupes = educationalEstablishment.getGroupes();
         int lengthStudentsArr = getLengthArrByBornAfter(groupes, day);
         Student[] students = new Student[lengthStudentsArr];
         int k = 0;

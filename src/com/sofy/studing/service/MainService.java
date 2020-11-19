@@ -2,13 +2,15 @@ package com.sofy.studing.service;
 
 import java.lang.Math;
 
-import com.sofy.studing.entity.Birthday;
-import com.sofy.studing.entity.Groupe;
-import com.sofy.studing.entity.Student;
-import com.sofy.studing.entity.Subject;
+import com.sofy.studing.entity.*;
 
 public class MainService {
-    public Groupe[] createRandomGroupes() {
+    public EducationalEstablishment createRandomEducationalEstablishment(){
+        Groupe[] groupes = createRandomGroupes();
+        return new EducationalEstablishment("Name Educational Establishment", groupes);
+    }
+
+    private Groupe[] createRandomGroupes() {
         final int NUMS_GROUPE = 5;
         final int NUMS_COURSES = 5;
         String[] facilty = {"facilty1", "facilty2", "facilty3", "facilty4", "facilty5"};

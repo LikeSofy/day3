@@ -17,3 +17,5 @@ X
 (src/com/sofy/studing/entity/Student.java,c\d\cdbb0ac5366a25f01ea5a98ecd979d1f785e4ca3
 X
 (src/com/sofy/studing/entity/Subject.java,b\7\b79b45a11fe51db8d5d0e18fc8f84533c22f001c
+i
+9src/com/sofy/studing/entity/EducationalEstablishment.java,6\a\6a516eb2161f1bf4cfd8e7a0dfbaab8a0fe95bcb
